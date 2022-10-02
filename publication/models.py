@@ -12,10 +12,10 @@ class Grade(models.Model):
     writer = models.CharField(max_length=40, default="anonymous")
     pub_date = models.DateTimeField(default=timezone.now)
     stars_nums = (
-        (1,1)
-        (2,2)
-        (3,3)
-        (4,4)
+        (1,1),
+        (2,2),
+        (3,3),
+        (4,4),
         (5,5)
     )
     stars = models.IntegerField(choices=stars_nums)
