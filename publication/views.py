@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Restaurant
-from .models import Grade
+from .models import Review
 from .forms import ReviewForm
 
 def pub(request):
@@ -18,8 +18,8 @@ def review(request, id):
         restaurant_name = request.POST.get('restaurant_name')
         stars = request.POST.get('stars')
         detail = request.POST.get('detail')
-        grade = Grade(restaurant_name=restaurant_name, stars=stars,  detail=detail , restaurant=post)
-        grade.save()
+        review = Review(restaurant_name=restaurant_name, stars=stars,  detail=detail , restaurant=post)
+        review.save()
         return redirect('success')
     
     form = ReviewForm()
