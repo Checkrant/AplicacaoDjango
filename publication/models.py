@@ -1,16 +1,25 @@
 from django.db import models
+from django.utils import timezone
 
-
-class Header(models.Model):
-    publication_title = models.CharField(max_length=30)
-    pub_date = models.DateTimeField('Published in')
+class Restaurant(models.Model):
+    restaurant_name = models.CharField(max_length=30)
+    food_type = models.DateTimeField('Published in')
+    rest_pic = models.FileField(upload_to='')
     def __str__(self):
-        return self.publication_title
+        return self.restaurant_name
 
 class Grade(models.Model):
-    grade = models.ForeignKey(Header, on_delete=models.CASCADE)
-    description = models.CharField(max_length=200)
-    stars_qty = models.IntegerField(default=0)
+    writer = models.CharField(max_length=40, default="anonymous")
+    pub_date = models.DateTimeField(default=timezone.now)
+    stars_nums = (
+        (1,1)
+        (2,2)
+        (3,3)
+        (4,4)
+        (5,5)
+    )
+    stars = models.IntegerField(choices=stars_nums)
+    detail = models.TextField(max_length=4000)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     def __str__(self):
-        return self.description
-    
+        return self.restaurant.restaurant_name   
