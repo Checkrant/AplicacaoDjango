@@ -2,6 +2,11 @@
 {% block content %}
 <form method="POST">
     {% csrf_token %}
-<input type="submit" value="OK">
+    {{form.as_p}}
+<input type="submit" value="entrar">
 </form>
+<ul>
+    <li><a href="{% url 'user.index' %}">cadastro de usuários</a></li>
+    <li><a href="{% url 'rant.index' %}">cadastro de restaurantes</a></li>
+</ul>
 {% endblock content %}
