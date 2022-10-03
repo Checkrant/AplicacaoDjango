@@ -9,7 +9,7 @@ def pub(request):
     context = {
         'items':items
     }
-    return render(request, "restaurant/pub.html", context)
+    return render(request, "pub.html", context)
 
 def review(request, id):
     post = Restaurant.objects.get(id=id)
@@ -26,7 +26,7 @@ def review(request, id):
     context = {
         "form":form
     }
-    return render(request, 'restaurant/review.html',context)
+    return render(request, 'pub.html',context)
 
 def success(request):
     return render(request, "restaurant/success.html")
