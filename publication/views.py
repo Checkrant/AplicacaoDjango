@@ -29,4 +29,4 @@ def review(request, id):
     return render(request, 'pub.html',context)
 
 def success(request):
-    return render(request, "restaurant/success.html")
+    return render(request, "success.html")
