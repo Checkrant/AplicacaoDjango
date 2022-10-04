@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-odg$*_!5*220uk$k)9jn8+62zok)qhv07v-jil%hdcgu0(w4s3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS - ['https://check-restaurant.herokuapp.com/']
 
 
 # Application definition
@@ -129,7 +129,7 @@ LOGIN_REDIRECT_URL = 'login'
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-ALLOWED_HOSTS - ['https://check-restaurant.herokuapp.com/']
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
