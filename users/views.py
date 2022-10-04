@@ -9,9 +9,9 @@ from .forms import userForm, rantForm
 class UserCreateView(CreateView):
     model = User
     form_class = userForm
-    success_url = '/accounts/login/?next=/'
+    success_url = '/#/'
 
 class UserRantCreateView(CreateView):
     model = UserRant
     form_class = rantForm
-    success_url = '/accounts/login/?next=/'
+    success_url = '/#/'
