@@ -3,7 +3,7 @@ from django.utils import timezone
 
 class Restaurant(models.Model):
     restaurant_name = models.CharField(max_length=30)
-    food_type = models.DateTimeField('Published in')
+    food_type = models.TextField(max_length=3000)
     rest_pic = models.FileField(upload_to='')
     def __str__(self):
         return self.restaurant_name

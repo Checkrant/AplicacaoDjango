@@ -26,7 +26,7 @@ def rate(request, id):
     context = {
         "form":form
     }
-    return render(request, 'pub.html',context)
+    return render(request, 'rate.html',context)
 
 def success(request):
     return render(request, "success.html")

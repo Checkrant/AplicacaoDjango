@@ -7,9 +7,9 @@
 </style>
     <div class="container">
         {% for item in items %}
-            <h1>{{ item.title}}</h1>
+            <h1>{{ item.restaurant_name}}</h1>
             <img src="{{ item.rest_pic.url }}">
-            <p style="margin: 2%; border:solid;">{{ item.description }}</p>
+            <p style="margin: 2%; border:solid;">{{ item.food_type }}</p>
             <button ><a href="{% url 'rate' item.id %}">Avaliar</a></button>
 
         {% endfor %}
