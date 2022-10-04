@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
 
 from telnetlib import LOGOUT
@@ -128,7 +129,7 @@ LOGIN_REDIRECT_URL = 'login'
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
+ALLOWED_HOSTS - ['https://check-restaurant.herokuapp.com/']
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -139,3 +140,5 @@ MEDIA_URL = '/media/'
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+django_heroku.settings(locals())
