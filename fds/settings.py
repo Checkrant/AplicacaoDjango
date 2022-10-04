@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-odg$*_!5*220uk$k)9jn8+62zok)qhv07v-jil%hdcgu0(w4s3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS - ['https://check-restaurant.herokuapp.com/']
+ALLOWED_HOSTS =['https://check-restaurant.herokuapp.com/']
 
 
 # Application definition
