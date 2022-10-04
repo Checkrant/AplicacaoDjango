@@ -10,7 +10,7 @@
             <h1>{{ item.title}}</h1>
             <img src="{{ item.rest_pic.url }}">
             <p style="margin: 2%; border:solid;">{{ item.description }}</p>
-            <button ><a href="{% url 'review' item.id %}">RATE NOW</a></button>
+            <button ><a href="{% url 'rate' item.id %}">Avaliar</a></button>
 
         {% endfor %}
     </div>

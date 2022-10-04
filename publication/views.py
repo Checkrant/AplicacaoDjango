@@ -11,14 +11,14 @@ def pub(request):
     }
     return render(request, "pub.html", context)
 
-def review(request, id):
+def rate(request, id):
     post = Restaurant.objects.get(id=id)
     form = ReviewForm(request.POST or None)
     if form.is_valid():
-        restaurant_name = request.POST.get('restaurant_name')
+        writer = request.POST.get('writer')
         stars = request.POST.get('stars')
         detail = request.POST.get('detail')
-        review = Review(restaurant_name=restaurant_name, stars=stars,  detail=detail , restaurant=post)
+        review = Review(writer=writer, stars=stars,  detail=detail , restaurant=post)
         review.save()
         return redirect('success')
     
