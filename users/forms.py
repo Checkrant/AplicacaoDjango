@@ -9,7 +9,7 @@ class userForm(forms.ModelForm):
         labels = {
             'nome': 'Nome',
             'email': 'Email',
-            'password': 'Password',
+            'password': 'Senha',
         }
 
 class rantForm(forms.ModelForm):
@@ -17,10 +17,10 @@ class rantForm(forms.ModelForm):
         model = UserRant
         fields = ['nomeRant', 'endereco', 'horarioInicio', 'horarioFinal', 'tipo', 'email', 'password']
         labels = {
-            'nomeRant': 'Nome Rant',
-            'endereco': 'Endereco',
-            'horarioInicio': 'Horario Inicio',
-            'horarioFinal': 'Horario Final',
+            'nomeRant': 'Nome Restaurante',
+            'endereco': 'Endereço',
+            'horarioInicio': 'Horário Inicio',
+            'horarioFinal': 'Horário Final',
             'tipo': 'Tipo'
         }
 
