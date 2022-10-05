@@ -7,6 +7,7 @@ Project created for the Software Development Fundamentals module.
 * [Gabriel Lopes](https://www.linkedin.com/in/gabriellopesaraujo/)
 * [Gabriel Galdino](linkedin.com/in/gabriel-galdino-5712b4251)
 * [Henrique Leal](linkedin.com/in/gabriel-galdino-5712b4251)
+* [Bernardo Coutinho](https://www.linkedin.com/in/bernardo-cabral-b539ba252)
 ## What is this project?
 Checkrant is a website used for restaurant evaluation based on users reviews.
 ## How is this project useful?
