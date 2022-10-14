@@ -10,8 +10,10 @@ class UserCreateView(CreateView):
     model = User
     form_class = userForm
     success_url = '/#/'
+    
 
 class UserRantCreateView(CreateView):
     model = UserRant
     form_class = rantForm
     success_url = '/#/'
+    
